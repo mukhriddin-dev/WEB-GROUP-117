@@ -1,5 +1,91 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "utf-8";
+@import "./normalize";
+@import "./fonts";
+@import "./variables";
+@import "./general";
+@import "./mixins";
+@import "./extends";
+@import "./blocks/all-blocks";
+@import "./visually-hidden";
+
+
+
+
+main {
+    padding-top: 120px;
+}
+
+.wrapper {
+    height: 600px;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    gap: 30px 12px;
+}
+
+
+
+
+.card {
+
+    @include customCard(320px, 400px, #fff, 0 0 12px silver, 10px);
+
+    &-img {
+        filter: brightness(100%);
+        transition: all 0.1s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &-body {
+        padding: 6px 8px;
+
+        .card-title {
+            font-size: 24px;
+            margin: 4px 0;
+        }
+    }
+}
+
+.box {
+
+
+    @include customCard(400px, 500px, red, 1px 1px 10px yellow, 8px);
+
+    &-img {
+        filter: brightness(100%);
+        transition: all 0.1s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &-body {
+        padding: 6px 8px;
+
+        .card-title {
+            font-size: 24px;
+            margin: 4px 0;
+        }
+    }
+}
+
+
+.btn-success {
+    @include btn(6px 12px, 5px, seagreen, 0 0 5px silver, 14px, #fff, 14px, 120px);
+    text-align: center;
+    border: none;
+
+    &:hover {
+        background-color: lime;
+    }
+}
+
+.btn-danger {
+    @include btn(12px 12px, 5px, rgb(208, 9, 85), 0 0 5px silver, 14px, #fff, 14px, 120px);
+    text-align: center;
+    border: none;
 }

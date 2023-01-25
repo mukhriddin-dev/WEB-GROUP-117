@@ -1,0 +1,21 @@
+// code
+
+@mixin customCard($width, $height, $backgroundColor, $boxshadow, $borderRadius) {
+    background-color: $backgroundColor;
+    width: $width;
+    height: $height;
+    border-radius: $borderRadius;
+    box-shadow: $boxshadow;
+}
+
+
+@mixin btn($p, $br, $bg, $bsh, $fs, $cl, $m, $w) {
+    padding: $p;
+    border-radius: $br;
+    box-shadow: $bsh;
+    background-color: $bg;
+    font-size: $fs;
+    color: $cl;
+    margin: $m;
+    width: $w;
+}
