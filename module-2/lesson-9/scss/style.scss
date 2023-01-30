@@ -1,0 +1,29 @@
+@charset "utf-8";
+@import "./fonts";
+@import "./general";
+@import "./normalize";
+@import "./variables";
+@import "./mixins";
+@import "./extends";
+@import "./visually-hidden";
+@import "./blocks/all-blocks";
+
+
+
+
+.card {
+    // @extend %cardStyle;
+    @include cardStyle(300px, 430px, #fff, 0 0 15px #070107b4, 12px, 5px);
+    overflow: hidden;
+
+    &__body{
+        padding: 10px;
+    }
+}
+
+.box {
+    // @extend %cardStyle;
+    @include cardStyle(300px, 400px, rgb(212, 255, 0), 0 0 15px #070107b4, 10px, 20px);
+    background-color: lime;
+    overflow: hidden;
+}

@@ -1,0 +1,33 @@
+// ------ CARD STYLE ------//
+
+%cardStyle {
+    width: 300px;
+    max-height: 540px;
+    min-height: 360px;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    margin: 10px;
+    background-color: #fff;
+}
+
+
+%center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%list-unstyled {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+%linkReset {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+

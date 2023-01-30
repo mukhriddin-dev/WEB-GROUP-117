@@ -1,0 +1,158 @@
+header {
+    width: 100%;
+    background-color: blueviolet;
+
+    .nav {
+
+        @include navStyle(space-between, center, auto, 100%);
+
+
+        &__logo {
+            font-size: 26px;
+            font-family: sans-serif;
+            color: #fff;
+        }
+
+        &__list {
+            @include navStyle(space-between, center, 70px, 35%);
+
+            &--item {
+                @extend %list-unstyled;
+                color: #fff;
+                font-family: sans-serif;
+                padding: 20px 30px;
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.582);
+                    color: yellow;
+                }
+
+                &-link {
+                    @extend %linkReset;
+                    text-transform: uppercase;
+                }
+            }
+
+
+        }
+
+        &__menu {
+            color: #fff;
+            display: none;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+    header {
+        width: 100%;
+        background-color: blueviolet;
+
+        .nav {
+
+            @include navStyle(space-between, center, auto, 100%);
+
+
+            &__logo {
+                font-size: 24px;
+                font-family: sans-serif;
+                color: #fff;
+            }
+
+            &__list {
+                @include navStyle(space-between, center, 70px, 75%);
+
+                &--item {
+                    @extend %list-unstyled;
+                    color: #fff;
+                    font-family: sans-serif;
+                    padding: 20px 30px;
+
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.582);
+                        color: yellow;
+                    }
+
+                    &-link {
+                        @extend %linkReset;
+                        text-transform: uppercase;
+                    }
+                }
+
+
+            }
+
+            &__menu {
+                color: #fff;
+                display: none;
+            }
+        }
+
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 428px) {
+
+
+    header {
+        width: 100%;
+        background-color: blueviolet;
+        position: fixed;
+        top:0;
+
+        .nav {
+
+            @include navStyle(space-between, center, 70px, 100%);
+           
+        
+            &__logo {
+                font-size: 24px;
+                font-family: sans-serif;
+                color: #fff;
+            }
+
+            &__list {
+                @include navStyle(space-between, center, 70px, 75%);
+                display: none;
+
+                &--item {
+
+                    color: #fff;
+                    font-family: sans-serif;
+                    padding: 20px 30px;
+
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.582);
+                        color: yellow;
+                    }
+
+                    &-link {
+
+                        text-transform: uppercase;
+                    }
+                }
+
+
+            }
+
+            &__menu {
+                color: #fff;
+                display: block;
+            }
+        }
+
+    }
+
+
+
+}
+
+

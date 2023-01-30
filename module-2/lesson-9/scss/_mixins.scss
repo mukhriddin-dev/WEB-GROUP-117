@@ -1,0 +1,16 @@
+@mixin cardStyle($w, $h, $bg, $bs, $br, $m) {
+    width: $w;
+    height: $h;
+    border-radius: $br;
+    background-color: $bg;
+    box-shadow: $bs;
+    margin: $m;
+}
+
+@mixin navStyle($justify, $align, $h , $w){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    height: $h;
+    width: $w;
+}
