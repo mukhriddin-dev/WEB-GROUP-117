@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- main css -->
+    <link rel="stylesheet" href="./src/styles/extra.css" />
+    <!-- icon box -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>lesson-1</title>
+  </head>
+
+  <body>
+    <!-- header start -->
+    <header>
+      <div class="container mx-auto">
+        <nav class="nav flex justify-between items-center h-[85px] mt-[54px]">
+          <a href="#"
+            ><img
+              src="./src/images/Logo.svg"
+              alt="logo"
+              class="nav__logo ml-3 sm:ml-5 md:ml-0"
+          /></a>
+
+          <ul
+            class="nav__ul hidden md:flex justify-between items-center lg:w-4/12 md:w-8/12"
+          >
+            <li class="nav__ul--list">
+              <a
+                href="#"
+                class="nav__ul--item-link hover:text-orange-500 duration-200"
+                >About</a
+              >
+            </li>
+            <li class="nav__ul--list">
+              <a
+                href="#"
+                class="nav__ul--item-link hover:text-orange-500 duration-200"
+                >Services</a
+              >
+            </li>
+            <li class="nav__ul--list">
+              <a
+                href="#"
+                class="nav__ul--item-link hover:text-orange-500 duration-200"
+                >Client</a
+              >
+            </li>
+            <li class="nav__ul--list">
+              <a
+                href="#"
+                class="nav__ul--item-link hover:text-orange-500 duration-200"
+                >Blog</a
+              >
+            </li>
+            <li class="nav__ul--list">
+              <a
+                href="#"
+                class="nav__ul--item-link hover:text-orange-500 duration-200"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <i class="bx bx-menu nav__menu text-3xl block sm:block md:hidden"></i>
+        </nav>
+      </div>
+    </header>
+    <!-- header end-->
+
+    <main>
+      <section class="intro w-full mt-8">
+        <div class="container mx-auto">
+          <div
+            class="intr-wrapper pl-0 md:pl-[76px] relative bg-[url('./src/images/Background.jpg')] h-[707px] rounded-[35px] bg-no-repeat bg-cover bg-center"
+          >
+            <div
+              class="intro__text max-w-[420px] h-auto px-[8px] pt-[216px] relative sm:z-20"
+            >
+              <h1
+                class="text-white text-[46px] md:text-[50px] font-bold leading-[71px]"
+              >
+                Go digital with us
+              </h1>
+
+              <p class="text-white leading-[26px] mt-[18px]">
+                We have designed hundreds of websites and helped improve their
+                online performance through SEO, SEM and Social Media Marketing
+              </p>
+
+              <button
+                class="w-[264px] mt-[50px] h-[67px] bg-[#FAFAFA] rounded-[35px] text-[#303948] text-[22px] hover:bg-[#ffffff8e] hover:border-spacing-4 border hover:border-cyan-400"
+              >
+                See Portofolio
+              </button>
+            </div>
+
+            <img
+              src="./src/images/business.png"
+              alt="buisness man"
+              class="absolute hidden sm:block right-0 top-0 sm:z-10"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

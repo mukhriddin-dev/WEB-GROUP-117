@@ -1,0 +1,28 @@
+{
+  "name": "web-group-117",
+  "version": "1.0.0",
+  "description": "tailwind",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mukhriddin-dev/WEB-GROUP-117.git"
+  },
+  "keywords": [
+    "css",
+    "tailwind"
+  ],
+  "author": "WEB-GROUP-117",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mukhriddin-dev/WEB-GROUP-117/issues"
+  },
+  "homepage": "https://github.com/mukhriddin-dev/WEB-GROUP-117#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4"
+  }
+}
