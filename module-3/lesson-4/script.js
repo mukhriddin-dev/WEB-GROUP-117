@@ -40,15 +40,43 @@
 // undefined
 
 
-// var a="js"
+//  var a="js"
 //  a = null;
-// console.log(a)
+//  console.log(a)
 
 // let str1 =Symbol('salom')
 // let str2 =Symbol('salom')
 // console.log(str1==str2)
+// let num = 11111;
+// let data = String(num)
+// agar string qiymati number bo'lsa type connv uchun *1
+// let text = +prompt('yoshingizni kiriting:');
+// let con=Number(text)
+// console.log(`${text}: type  + ${typeof(text)}`);
+// 
+
+// ->  ! is not 
+
+// 
 
 
+// console.log("salom" == "salom");
+
+// console.log(!(10>99))
+
+
+// let a = "java";
+// let b = "Script";
+
+
+// // a -= b;
+// // a *= b;
+// // a **= b;
+
+// a += b;
+
+
+// console.log(a)
 
 
 
