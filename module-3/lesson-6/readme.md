@@ -1,8 +1,13 @@
 ### Day 6
 
 1. ## "switch" statement
-2. Truthy and Falthy
+2. Truthy and Falthy 
+
+
+
+
 3. ## Loops: while and for ( while, do..while and for(..;..;..) )
+
 4. ## Function and function types
 5. Function arrow func / func expression / func declaration
 function parametrs
