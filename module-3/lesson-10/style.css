@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1440px;
+    padding: 0  20px;
+    margin: 0 auto;
+}
+
+.box{
+    width: 30px;
+    height: 30px;
+    background:lime;
+    border-radius: 50%;
+    transition: all 0.1s ease;
+
+}
