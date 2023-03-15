@@ -1,6 +1,6 @@
 "use strict";
 
-let sum = 11370;
+let sum = 11470;
 
 let shop = [
   {
@@ -112,6 +112,7 @@ function brands() {
 
         })
     }
+    
 }
 
 
