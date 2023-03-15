@@ -1,0 +1,18 @@
+main{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px , 1fr));
+    gap: 20px;
+    overflow-y: scroll;
+    max-height: 100vh;
+}
+
+.mask{
+    background:rgba(251, 251, 251, 0.15);
+}
