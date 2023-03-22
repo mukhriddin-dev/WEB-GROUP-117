@@ -16,3 +16,45 @@ main{
 .mask{
     background:rgba(251, 251, 251, 0.15);
 }
+
+.aside{
+    z-index: 9999999;
+    top:0;
+    right: 0;
+    min-width: 390px !important;
+    background-color: red;
+    padding: 10px;
+}
+
+.aside .bookmark{
+    width: 90%;
+    height: 105vh;
+    padding: 10px;
+    position: relative;
+    overflow-y: scroll;
+
+}
+
+.del{
+    width: 32px;
+    height: 32px;
+    display: flex;justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    color:#fff;
+
+}
+
+
+.del:active{
+    background-color: #c6ff6b !important;
+}
+
+.card{
+    max-width: 540px;
+    min-height: 100px;
+}
+

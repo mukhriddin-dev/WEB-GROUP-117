@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>app</title>
+
+    <style>
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 1440px;
+        margin: 50px auto;
+        background-color: cornflowerblue;
+        padding: 40px;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: crimson;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box">box-1</div>
+      <div class="box">box-2</div>
+      <div class="box">box-3</div>
+      <div class="box">box-4</div>
+    </div>
+  </body>
+  <script src="./utils.js"></script>
+  <script>
+    // let box = $$(".box");
+
+    // box.forEach((element) => {
+    //   element.addEventListener("click", (e) => {
+    //     console.log(e.target.textContent);
+    //   });
+    // });
+
+    for (let i = 0; i < 2; i++) {
+      const box = createElement("div", "box", `box-${i + 4}`);
+      box.dataset.info=i+1;
+      $(".wrapper").append(box);
+    }
+
+    $(".wrapper").addEventListener("click", (e) => {
+      if (e.target.classList.contains("box")) {
+        console.log(e.target);
+      }
+    });
+
+    
+  </script>
+</html>

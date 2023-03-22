@@ -33,8 +33,7 @@
                 placeholder="Global Search"
                 aria-label="Search"
                 aria-describedby="search-addon"
-                id="global-search"
-                />
+                id="global-search" />
               <span
                 class="input-group-text border-0 bg-white"
                 id="search-addon">
@@ -49,16 +48,17 @@
 
     <main>
       <section class="main">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
-            <div class="col-md-3 col-sm-12 col-12 bg-white py-3">
-              <form action="#" class="shadow p-2 rounded-3">
+            <div class="col-md-2 col-sm-12 col-12 bg-white py-3">
+              <form id="searchFilm" action="#" class="shadow p-2 rounded-3">
                 <div class="form-outline my-4">
                   <input
                     type="text"
                     id="name"
-                    class="form-control border p-2" />
-                  <label class="form-label" for="name">Serach by name</label>
+                    class="form-control border p-2"
+                    placeholder="Serach by name" />
+                  <!-- <label class="form-label" for="name">Serach by name</label> -->
                 </div>
 
                 <div class="form-outline my-4">
@@ -67,16 +67,16 @@
                     max="10"
                     type="number"
                     id="rating"
-                    class="form-control border p-2" />
-                  <label class="form-label" for="rating"
+                    class="form-control border p-2"
+                    placeholder="Serach by rating" />
+                  <!-- <label class="form-label" for="rating"
                     >Enter film rating</label
-                  >
+                  > -->
                 </div>
 
                 <div class="form-outline my-4">
                   <select id="category" class="form-select">
                     <option disabled selected>Select film category</option>
-
                   </select>
                 </div>
 
@@ -86,14 +86,20 @@
               </form>
             </div>
 
-            <div class="col-md-9 col-sm-12 col-12 bg-success p-4">
-              <div class="wrapper">
-  
-              </div>
+            <div class="col-md-7 col-sm-12 col-12 bg-success p-4">
+              <div class="wrapper"></div>
             </div>
           </div>
         </div>
       </section>
+      <aside class="position-absolute right-0 aside">
+        <div class="bookmark bg-light shadow">
+
+   
+
+
+        </div>
+      </aside>
     </main>
 
     <footer class="bg-danger text-center text-white">
