@@ -1,0 +1,19 @@
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #444;
+  color: #fff !important;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+
+    a{
+        color: #fff !important;
+        text-transform: uppercase;
+        font-family: sans-serif;
+    }
+  }
+}

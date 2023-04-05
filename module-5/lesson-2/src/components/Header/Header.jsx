@@ -1,8 +1,9 @@
 import React from 'react'
+import "./index.scss";
 
 const Header = () => {
 
-    let darkmode = true;
+    // let darkmode = true;
 
     // const headerStyle = {
     //     backgroundColor: darkmode ? "#000" : "#fff",
@@ -11,7 +12,7 @@ const Header = () => {
 
 
   return (
-    <header style={headerStyle}>
+    <header >
       <div className='container'>
         <nav className='nav'>
           <a href='#' className='nav__brand'>

@@ -2,9 +2,9 @@
 ### Reja:
 
 - File Architechture: Assets 
-- Images Fonts Lib
+- Images , Fonts  , Lib
 - Node Sass npm i node-sass
-- styling elements
+- styling elements,
 - Props , Children
 - useState , 👉 Batafsil o’qish
 - map , key

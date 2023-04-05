@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.container{
+    max-width: 1440px !important;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+main{
+    min-height: calc( 100vh - 30px - 70px );
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
