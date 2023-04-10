@@ -1,56 +1,44 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import Header from './components/Header/Header'
 import Footer from './components/Footer'
+import Loader from './UI/Loader'
 
 const App = () => {
-  const [number, setNumber] = useState(0)
-  const [lang, setLang] = useState('React JS')
-  const [show, setShow] = useState(false)
+  
+  const [num, setNum] = useState(0)
+  const [post, setPost] = useState([])
+  const [load, setLoad] = useState(false)
 
-  function INCREMENT () {
-    setNumber(number + 1)
+  const fetchPost = async () => {
+    try {
+      const response = await fetch('https://jsonplaceholder.typicode.com/posts')
+      const result = await response.json()
+      if (response.status === 200) {
+        setPost(result)
+        setLoad(true)
+      }
+    } catch (err) {
+      console.log(err)
+    }
   }
 
-  function DECREMENT () {
-    setNumber(number - 1)
-  }
+  useEffect(() => {
+    fetchPost()
+  }, [])
 
-  console.log(number)
-
-  const style = {
-    display: show ? 'block' : 'none'
+  if (!load) {
+    return <Loader />
   }
 
   return (
     <>
       <Header />
       <main>
-        <button
-          className='btn btn-success m-5'
-          onClick={() => setShow(e => !e)}
-        >
-          {show ? 'show' : 'hide'}
-        </button>
-
-        <div className='p-5 shadow w-75 mx-auto m-5' style={style}>
-          <h1 className='text-center fs-1'>
-            {number} {lang}
-          </h1>
-
-          <button
-            className='btn btn-success m-5'
-            onClick={() => setLang('vueJS')}
-          >
-            EDIT TEXT
-          </button>
-
-          <button className='btn btn-danger m-5' onClick={() => DECREMENT()}>
-            DECREMENT
-          </button>
-          <button className='btn btn-primary m-5' onClick={() => INCREMENT()}>
-            INCREMENT
-          </button>
-        </div>
+        <ul>
+          {post?.map(post => {
+            return <li key={post.id}>{post.title}</li>
+          })}
+        </ul>
       </main>
       <Footer />
     </>

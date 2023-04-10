@@ -21,3 +21,12 @@
 - useRef , 👉 Batafsil o'qish
 - Forms
 - Conditional rendering
+
+## 4-dars.
+- useRef , 👉 Batafsil o'qish (takrorlsh)
+- componentLifecycles 👉 Batafsil o'qish
+- useEffect , 👉 Batafsil o'qish
+- fetch vs axios
+- REST API ,
+- React ROUTER DOM ga kirish 👉 Batafsil o'qish
+

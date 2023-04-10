@@ -21,3 +21,12 @@ main{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+
+.cards{
+    transition: all 0.5s ease-in-out;
+}
+
+.swipe{
+    transform: translateX(-120%);
+}
