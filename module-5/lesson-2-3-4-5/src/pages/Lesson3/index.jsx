@@ -1,9 +1,17 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 
 const index = () => {
   const [number, setNumber] = useState(0)
   const [lang, setLang] = useState('React JS')
   const [show, setShow] = useState(false)
+
+  useEffect(() => {
+    console.log('render app')
+
+    return () => {
+      console.log('Unmounted')
+    }
+  }, [])
 
   const cardRef = useRef('ok')
   const inputRef = useRef('')

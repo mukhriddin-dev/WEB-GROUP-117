@@ -30,3 +30,31 @@ main{
 .swipe{
     transform: translateX(-120%);
 }
+
+.active::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
+
+.wrap{
+    padding: 100px;
+    border: 5px solid #000;
+    margin: 5px;
+}
+
+.wrap2 {
+    padding: 100px;
+    border: 5px solid #ff0000;
+    margin: 5px;
+}
+
+
+.wrap3 {
+    padding: 100px;
+    border: 5px solid #dad70a;
+    margin: 25px;
+}
