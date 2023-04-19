@@ -1,10 +1,12 @@
-import React, {useEffect} from "react";
+import React, {useEffect, memo, useState} from "react";
 import {Routes, Route, useLocation, useNavigate} from "react-router-dom";
 
 import {useGuard} from "./hooks/useAuthGuard";
 import Layout from "./Layout/Layout";
 
 const App = () => {
+  const [num,setNum]=useState(0);
+console.log("render app")
     const isAuth = useGuard();
     const {pathname} = useLocation();
     const navigate = useNavigate();
@@ -19,8 +21,9 @@ const App = () => {
     return (
         <>
        <Layout/>
+       <button onClick={()=>setNum(num+1)}>ADD {num}</button>
         </>
     );
 };
 
-export default App;
+export default memo(App);
